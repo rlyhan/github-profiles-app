@@ -1,3 +1,6 @@
+To run this project locally, create a .env.local file and add your GitHub key, eg:
+GITHUB_KEY=xxxxxxxxx
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
