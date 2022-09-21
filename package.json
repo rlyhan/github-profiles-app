@@ -2,6 +2,7 @@
   "name": "github-profiles-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,12 +10,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "next": "12.3.0",
+    "octokit": "^2.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "eslint": "8.23.1",
-    "eslint-config-next": "12.3.0"
+    "eslint-config-next": "12.3.0",
+    "sass": "^1.54.9"
   }
 }
