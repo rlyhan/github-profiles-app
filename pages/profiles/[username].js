@@ -7,7 +7,7 @@ import utilStyles from '../../styles/utils.module.scss';
 
 import { sortByKey } from '../../utilities/helpers'
 
-const baseURL = 'http://localhost:3000/'
+const baseURL = process.env.SERVER
 
 export async function getServerSideProps({ req, params }) {
   const userResponse = await axios.get(`${baseURL}/api/profiles/${params.username}`, {})
