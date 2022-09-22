@@ -12,5 +12,6 @@ export default async (req, res) => {
     res.send(result)
   } catch (error) {
     console.log('Error!')
+    res.end()
   }
 };

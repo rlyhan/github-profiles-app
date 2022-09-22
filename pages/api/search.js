@@ -8,7 +8,7 @@ export default async (req, res) => {
   const endpoint = 'GET /search/users'
   const data = {
     q: req.query.q,
-    per_page: 10
+    per_page: req.query.per_page
   }
 
   try {
@@ -16,5 +16,6 @@ export default async (req, res) => {
     res.send(JSON.stringify(result))
   } catch (error) {
     console.log('Error!')
+    res.end()
   }
 };

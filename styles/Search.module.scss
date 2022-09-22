@@ -1,0 +1,33 @@
+.searchBar {
+  border: 1px solid black;
+  display: flex;
+
+  .searchInput {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 80%;
+    border: 0;
+    border-right: 1px solid black;
+  }
+
+  .searchButton {
+    font-size: 1rem;
+    text-align: center;
+    width: 20%;
+    min-width: 105px;
+    padding: 1rem;
+    cursor: pointer;
+  }
+}
+
+.results {
+  ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .resultsMessage {
+    margin: 1rem;
+  }
+}
