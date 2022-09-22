@@ -8,7 +8,7 @@ export default async (req, res) => {
   const endpoint = 'GET /users'
 
   try {
-    const result = await octokit.request(endpoint, data)
+    const result = await octokit.request(endpoint, {})
     res.send(result)
   } catch (error) {
     console.log('Error!')
